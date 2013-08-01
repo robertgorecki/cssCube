@@ -12,7 +12,5 @@ Array.prototype.forEach.call(links, function(link) {
 
 opacityCtrl.addEventListener("change", function(e) {
 	e.preventDefault();
-	Array.prototype.forEach.call(walls, function(wall) {
-		wall.setAttribute("style", "opacity:" + e.target.value + ";");
-	});
+	cube.setAttribute("style", "opacity:" + e.target.value + ";");
 });
